@@ -1,3 +1,9 @@
+//synchronous and Asynchronous
+//callback
+//promise
+//async and await
+//then and catch
+
 //Synchronous :so the execution of each operation depends on completing the one before it.
 //for ex: i have two oprations a - 5s and b - 1s task b execute after 5s
 //Asynchronous : it execute the each task at the same time is not depends on another operation
