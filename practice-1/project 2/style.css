@@ -17,7 +17,8 @@ body {
 
 #home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+
   /* border: 1px solid red; */
 }
 
@@ -56,6 +57,13 @@ body {
   padding: 15vw 15vw;
 }
 
+/* #homemain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
 #homemain h1 {
   font-family: 500;
 
@@ -64,6 +72,8 @@ body {
 
 .heading {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -76,6 +86,10 @@ body {
   -webkit-text-stroke: 1px #000;
 }
 
+#homemain .heading h1:hover {
+  color: #000;
+}
+
 #homelast {
   padding: 5vw 15vw;
 }
@@ -83,7 +97,7 @@ body {
 #homelast p {
   width: 50%;
   font-size: 1.6vw;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.08vw;
 }
 
@@ -161,13 +175,20 @@ body {
   background-color: red;
 }
 
-#btndiv {
+#fright .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btndiv {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#btndiv button {
+.btndiv button {
+  margin: 5vw 0;
   padding: 1.3vw 2.5vw;
   border-radius: 100px;
   border: 2px solid #ebebeb;
@@ -183,20 +204,57 @@ body {
 }
 
 #dev h1 {
-  font-size: 3.8vw;
-  font-weight: 400;
+  font-size: 3.5vw;
+  font-weight: 600;
   width: 60%;
   line-height: 1;
   text-transform: capitalize;
 }
 
 #dev p {
-  font-size: 1.5vw;
-  margin-top: 3vw;
+  font-size: 1.3vw;
+  margin-top: 2vw;
   letter-spacing: -0.5px;
   width: 60%;
+  font-weight: 300;
 }
 #dev p::selection {
   color: #fff;
   background-color: #000;
+}
+
+#slides {
+  display: flex;
+  padding: 3vw 10vw;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 30%;
+}
+
+.slide .img {
+  width: 100%;
+  height: 270px;
+}
+
+.slide .img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .tag {
+  width: fit-content;
+  border-radius: 100px;
+  padding: 10px 22px;
+  margin: 20px 0;
+  background-color: #f7f7f7;
+}
+
+.slide h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
